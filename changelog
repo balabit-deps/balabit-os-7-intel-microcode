@@ -1,12 +1,41 @@
-2018-08-07:
-  * Implement L1D cache flush support, L1TF mitigation
+2019-03-12:
+  * Removed Microcodes:
+    sig 0x00050653, pf_mask 0x97, 2018-01-29, rev 0x1000140, size 30720
+  * New Microcodes:
+    sig 0x000806e9, pf_mask 0x10, 2018-10-18, rev 0x009e, size 98304
+    sig 0x000806eb, pf_mask 0xd0, 2018-10-25, rev 0x00a4, size 99328
+    sig 0x000806ec, pf_mask 0x94, 2019-02-12, rev 0x00b2, size 98304
+    sig 0x000906ec, pf_mask 0x22, 2018-09-29, rev 0x00a2, size 98304
+    sig 0x000906ed, pf_mask 0x22, 2019-02-04, rev 0x00b0, size 97280
+  * Updated Microcodes:
+    sig 0x000306f2, pf_mask 0x6f, 2018-11-20, rev 0x0041, size 34816
+    sig 0x000306f4, pf_mask 0x80, 2018-11-06, rev 0x0013, size 17408
+    sig 0x00050654, pf_mask 0xb7, 2019-01-28, rev 0x200005a, size 33792
+    sig 0x00050662, pf_mask 0x10, 2018-12-06, rev 0x0019, size 32768
+    sig 0x00050663, pf_mask 0x10, 2018-12-06, rev 0x7000016, size 23552
+    sig 0x00050664, pf_mask 0x10, 2018-11-17, rev 0xf000014, size 23552
+    sig 0x00050665, pf_mask 0x10, 2018-11-17, rev 0xe00000c, size 19456
+    sig 0x000506c9, pf_mask 0x03, 2018-09-14, rev 0x0036, size 17408
+    sig 0x000506ca, pf_mask 0x03, 2018-09-20, rev 0x0010, size 15360
+    sig 0x000706a1, pf_mask 0x01, 2018-09-21, rev 0x002c, size 73728
+    sig 0x000806e9, pf_mask 0xc0, 2018-07-16, rev 0x009a, size 98304
+    sig 0x000806ea, pf_mask 0xc0, 2018-10-18, rev 0x009e, size 98304
+    sig 0x000906e9, pf_mask 0x2a, 2018-07-16, rev 0x009a, size 98304
+    sig 0x000906ea, pf_mask 0x22, 2018-12-12, rev 0x00aa, size 98304
+    sig 0x000906eb, pf_mask 0x02, 2018-12-12, rev 0x00aa, size 99328
+
+2018-08-07, 2018-08-07a:
+  * Implements L1D_FLUSH support, L1TF "Foreshadow/-NG" mitigation
+  * Implements SSBD support, Spectre v4 mitigation
+  * Disable speculation for (some) RDMSR/WRMSR, Spectre v3a fix
+  * Implements IBRS/IBPB/STIPB support, Spectre v2 mitigation for
+    sigs 0x106a5, 0x106e5, 0x20652, 0x20655
   * New Microcodes:
     sig 0x000206c2, pf_mask 0x03, 2018-05-08, rev 0x001f, size 11264
     sig 0x000206e6, pf_mask 0x04, 2018-05-15, rev 0x000d, size 9216
     sig 0x000506c2, pf_mask 0x01, 2018-05-11, rev 0x0014, size 15360
     sig 0x000506ca, pf_mask 0x03, 2018-05-11, rev 0x000c, size 14336
     sig 0x000506f1, pf_mask 0x01, 2018-05-11, rev 0x0024, size 10240
-
   * Updated Microcodes:
     sig 0x000106a5, pf_mask 0x03, 2018-05-11, rev 0x001d, size 12288
     sig 0x000106e5, pf_mask 0x13, 2018-05-08, rev 0x000a, size 9216
@@ -34,6 +63,7 @@
     sig 0x000906eb, pf_mask 0x02, 2018-03-24, rev 0x008e, size 98304
 
 2018-07-03:
+  * Implements L1D_FLUSH support, L1TF "Foreshadow/-NG" mitigation
   * Implements SSBD support, Spectre v4 mitigation
   * Disable speculation for (some) RDMSR/WRMSR, Spectre v3a fix
   * Updated Microcodes:

@@ -31,27 +31,6 @@ IUC_EXCLUDE :=
 # 0x106c0: alpha hardware, seen in a very very old microcode data file
 IUC_EXCLUDE += -s !0x106c0
 
-# 0x206c2: Intel Westmere B1 (Xeon 3600, 5600, Core i7 2nd gen).
-#
-# When Intel released a fix for Intel SA-00030, they issued a MCU that
-# bumps the minimum acceptable version of the Intel TXT ACMs in the
-# TPM persistent storage.  This permanently blacklists the vulnerable
-# ACMs *even on older microcode* in order to make it somewhat harder
-# to work around the security fix through a BIOS downgrade attack.
-#
-# It is possible that such a microcode update, when peformed by the
-# operating system, could sucessfully trigger the TPM persistent
-# storage update Intel intended to happen during firmware boot: we
-# simply don't know enough to rule it out.  Should that happen, Intel
-# TXT will be permanently disabled.  This could easily interact very
-# badly with the firmware, rendering the system unbootable.  If *that*
-# happens, it would likely require either a TPM module replacement
-# (rendering sealed data useless) or a direct flash of a new BIOS with
-# updated ACMs, to repair.
-#
-# Blacklist updates for signature 0x206c2 as a safety net.
-IUC_EXCLUDE += -s !0x206c2
-
 # INCLUDING MICROCODES:
 #
 # This should be used to add a microcode from any of the regular
