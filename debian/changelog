@@ -1,3 +1,25 @@
+intel-microcode (3.20190514.0ubuntu0.18.04.3) bionic-security; urgency=medium
+
+  * Update to final 20190514 microcode update. (LP: #1829745)
+    - CVE-2018-12126, CVE-2018-12127, CVE-2018-12130, CVE-2019-11091
+    + New Microcodes:
+      sig 0x00030678, pf_mask 0x02, 2019-04-22, rev 0x0838, size 52224
+      sig 0x00030678, pf_mask 0x0c, 2019-04-22, rev 0x0838, size 52224
+      sig 0x00030679, pf_mask 0x0f, 2019-04-23, rev 0x090c, size 52224
+      sig 0x000406c3, pf_mask 0x01, 2019-04-23, rev 0x0368, size 69632
+      sig 0x000406c4, pf_mask 0x01, 2019-04-23, rev 0x0411, size 68608
+    + Add MDS mitigation support for Cherry Trail and Bay Trail
+      processor families.
+
+  [ Dimitri John Ledkov ]
+  * Do not override preset defaults from auto-exported conf snippets
+    loaded by initramfs-tools. This thus allows other hooks, or
+    alternative confdir override the built-in defaults at mkinitramfs
+    time. Specifically to support generating installer/golden/bare-metal
+    initrds with all microcodes for any hardware.
+
+ -- Steve Beattie <sbeattie@ubuntu.com>  Mon, 20 May 2019 22:08:04 -0700
+
 intel-microcode (3.20190514.0ubuntu0.18.04.2) bionic-security; urgency=medium
 
   * SECURITY UPDATE: new upstream datafile 20190507
