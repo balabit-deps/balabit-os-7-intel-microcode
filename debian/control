@@ -6,7 +6,7 @@ XSBC-Original-Maintainer: Henrique de Moraes Holschuh <hmh@debian.org>
 Uploaders: Giacomo Catenazzi <cate@debian.org>
 Build-Depends: debhelper (>= 9), iucode-tool (>= 0.9)
 Standards-Version: 4.1.1
-Homepage: https://downloadcenter.intel.com/search?keyword=linux+microcode
+Homepage: https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files
 Vcs-Git: https://salsa.debian.org/hmh/intel-microcode.git
 Vcs-Browser: https://salsa.debian.org/hmh/intel-microcode
 XS-Autobuild: yes

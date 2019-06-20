@@ -3,6 +3,7 @@ Wed, 20 Feb 2008 07:43:49 +0100, and heavily modified by Henrique de
 Moraes Holschuh <hmh@debian.org> on Fri, 13 Jul 2012 15:23:23 -0300.
 
 It was downloaded through https://downloadcenter.intel.com/search?keyword=linux+microcode
+and later through https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files
 
 Debian distributes each individual Intel microcode update unmodified, as
 downloaded from Intel.  Each individual microcode update is translated to a
@@ -15,7 +16,7 @@ Upstream Author:
 
 Upstream Copyright: 
 
-    Copyright (c) <1995-2018>, Intel Corporation.
+    Copyright (c) <1995-2019>, Intel Corporation.
     All rights reserved.
 
 Upstream License:

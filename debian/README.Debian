@@ -182,12 +182,8 @@ reasons.
 Downloading new microcode data from Intel:
 
 A new version of the microcode bundle can be downloaded directly from
-Intel.  Try to search for "Linux Microcode":
-
-	https://downloadcenter.intel.com/search?keyword=linux+microcode
-
-Alternatively, you can try looking for the downloads related to a recent
-Intel processor.
+Intel (through their GitHub project):
+https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files
 
 
 To manually install the downloaded microcode bundle, unpack the archive you
