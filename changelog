@@ -1,3 +1,42 @@
+2019-11-12:
+  * CVE-2019-11135, CVE-2019-11139
+  * New Microcodes:
+    sig 0x000406d8, pf_mask 0x01, 2019-09-16, rev 0x012d, size 84992
+    sig 0x00050653, pf_mask 0x97, 2019-08-02, rev 0x1000150, size 31744
+    sig 0x00050656, pf_mask 0xbf, 2019-09-05, rev 0x400002c, size 51200
+    sig 0x00060663, pf_mask 0x80, 2018-04-17, rev 0x002a, size 87040
+    sig 0x000706a8, pf_mask 0x01, 2019-08-29, rev 0x0016, size 74752
+    sig 0x000706e5, pf_mask 0x80, 2019-09-05, rev 0x0046, size 102400
+    sig 0x000a0660, pf_mask 0x80, 2019-08-27, rev 0x00c6, size 91136
+  * Updated Microcodes:
+    sig 0x000406e3, pf_mask 0xc0, 2019-08-14, rev 0x00d4, size 101376
+    sig 0x00050654, pf_mask 0xb7, 2019-09-05, rev 0x2000065, size 34816
+    sig 0x00050657, pf_mask 0xbf, 2019-09-05, rev 0x500002c, size 51200
+    sig 0x000506e3, pf_mask 0x36, 2019-08-14, rev 0x00d4, size 101376
+    sig 0x000706a1, pf_mask 0x01, 2019-08-28, rev 0x0032, size 73728
+    sig 0x000806e9, pf_mask 0x10, 2019-08-14, rev 0x00c6, size 99328
+    sig 0x000806e9, pf_mask 0xc0, 2019-08-14, rev 0x00c6, size 100352
+    sig 0x000806ea, pf_mask 0xc0, 2019-08-14, rev 0x00c6, size 99328
+    sig 0x000806eb, pf_mask 0xd0, 2019-08-14, rev 0x00c6, size 100352
+    sig 0x000806ec, pf_mask 0x94, 2019-08-14, rev 0x00c6, size 100352
+    sig 0x000906e9, pf_mask 0x2a, 2019-08-14, rev 0x00c6, size 100352
+    sig 0x000906ea, pf_mask 0x22, 2019-08-14, rev 0x00c6, size 99328
+    sig 0x000906eb, pf_mask 0x02, 2019-08-14, rev 0x00c6, size 100352
+    sig 0x000906ed, pf_mask 0x22, 2019-08-14, rev 0x00c6, size 99328
+
+2019-09-18:
+  * Updated Microcodes:
+    sig 0x000306d4, pf_mask 0xc0, 2019-06-13, rev 0x002e, size 19456
+    sig 0x000306f4, pf_mask 0x80, 2019-06-17, rev 0x0016, size 18432
+    sig 0x00040671, pf_mask 0x22, 2019-06-13, rev 0x0021, size 14336
+    sig 0x000406f1, pf_mask 0xef, 2019-06-18, rev 0xb000038, size 30720
+    sig 0x00050654, pf_mask 0xb7, 2019-07-31, rev 0x2000064, size 33792
+    sig 0x00050657, pf_mask 0xbf, 2019-08-12, rev 0x500002b, size 51200
+    sig 0x00050662, pf_mask 0x10, 2019-06-17, rev 0x001c, size 32768
+    sig 0x00050663, pf_mask 0x10, 2019-06-17, rev 0x7000019, size 24576
+    sig 0x00050664, pf_mask 0x10, 2019-06-17, rev 0xf000017, size 24576
+    sig 0x00050665, pf_mask 0x10, 2019-06-17, rev 0xe00000f, size 19456
+
 2019-06-18:
   * Implements MDS mitigation (RIDL, Fallout, Zombieload), INTEL-SA-00223
     CVE-2018-12126, CVE-2018-12127, CVE-2018-12130, CVE-2019-11091

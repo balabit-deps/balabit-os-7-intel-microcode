@@ -1,4 +1,65 @@
-intel-microcode (3.20190618.0ubuntu0.18.04.1) bionic-security; urgency=medium
+intel-microcode (3.20191112-0ubuntu0.18.04.2) bionic-security; urgency=medium
+
+  * SECURITY UPDATE: New upstream microcode data release 20191112
+    CVE-2019-11135, CVE-2019-11139
+    + New Microcodes:
+      sig 0x000406d8, pf_mask 0x01, 2019-09-16, rev 0x012d, size 84992
+      sig 0x00050653, pf_mask 0x97, 2019-09-09, rev 0x1000151, size 32768
+      sig 0x00050656, pf_mask 0xbf, 2019-09-05, rev 0x400002c, size 51200
+      sig 0x00060663, pf_mask 0x80, 2018-04-17, rev 0x002a, size 87040
+      sig 0x000706a8, pf_mask 0x01, 2019-08-29, rev 0x0016, size 74752
+      sig 0x000706e5, pf_mask 0x80, 2019-10-07, rev 0x004e, size 103424
+      sig 0x000a0660, pf_mask 0x80, 2019-08-27, rev 0x00c6, size 91136
+    + Updated Microcodes:
+      sig 0x000406e3, pf_mask 0xc0, 2019-08-14, rev 0x00d4, size 101376
+      sig 0x00050654, pf_mask 0xb7, 2019-09-05, rev 0x2000065, size 34816
+      sig 0x00050657, pf_mask 0xbf, 2019-09-05, rev 0x500002c, size 51200
+      sig 0x000506e3, pf_mask 0x36, 2019-08-14, rev 0x00d4, size 101376
+      sig 0x000706a1, pf_mask 0x01, 2019-08-28, rev 0x0032, size 73728
+      sig 0x000806e9, pf_mask 0x10, 2019-08-14, rev 0x00c6, size 99328
+      sig 0x000806e9, pf_mask 0xc0, 2019-08-14, rev 0x00c6, size 100352
+      sig 0x000806ea, pf_mask 0xc0, 2019-08-14, rev 0x00c6, size 99328
+      sig 0x000806eb, pf_mask 0xd0, 2019-08-14, rev 0x00c6, size 100352
+      sig 0x000806ec, pf_mask 0x94, 2019-08-14, rev 0x00c6, size 100352
+      sig 0x000906e9, pf_mask 0x2a, 2019-04-30, rev 0x00ba, size 99328
+      sig 0x000906ea, pf_mask 0x22, 2019-08-14, rev 0x00c6, size 99328
+      sig 0x000906eb, pf_mask 0x02, 2019-08-14, rev 0x00c6, size 100352
+      sig 0x000906ed, pf_mask 0x22, 2019-08-14, rev 0x00c6, size 99328
+  * Remaining Ubuntu changes:
+    - debian/initramfs.hook: Do not override preset defaults from
+      auto-exported conf snippets loaded by initramfs-tools.
+
+ -- Steve Beattie <sbeattie@ubuntu.com>  Tue, 12 Nov 2019 10:52:48 -0800
+
+intel-microcode (3.20190918.1ubuntu1) eoan; urgency=low
+
+  * Merge from Debian testing.  Remaining changes:
+    - debian/initramfs.hook: Do not override preset defaults from
+      auto-exported conf snippets loaded by initramfs-tools.
+
+ -- Steve Beattie <sbeattie@ubuntu.com>  Mon, 30 Sep 2019 11:37:19 -0700
+
+intel-microcode (3.20190918.1) unstable; urgency=medium
+
+  * New upstream microcode datafile 20190918
+    + SECURITY UPDATE
+      *Might* contain mitigations for INTEL-SA-00247 (RAMBleed), given
+      the set of processors being updated.
+    + Updated Microcodes:
+      sig 0x000306d4, pf_mask 0xc0, 2019-06-13, rev 0x002e, size 19456
+      sig 0x000306f4, pf_mask 0x80, 2019-06-17, rev 0x0016, size 18432
+      sig 0x00040671, pf_mask 0x22, 2019-06-13, rev 0x0021, size 14336
+      sig 0x000406f1, pf_mask 0xef, 2019-06-18, rev 0xb000038, size 30720
+      sig 0x00050654, pf_mask 0xb7, 2019-07-31, rev 0x2000064, size 33792
+      sig 0x00050657, pf_mask 0xbf, 2019-08-12, rev 0x500002b, size 51200
+      sig 0x00050662, pf_mask 0x10, 2019-06-17, rev 0x001c, size 32768
+      sig 0x00050663, pf_mask 0x10, 2019-06-17, rev 0x7000019, size 24576
+      sig 0x00050664, pf_mask 0x10, 2019-06-17, rev 0xf000017, size 24576
+      sig 0x00050665, pf_mask 0x10, 2019-06-17, rev 0xe00000f, size 19456
+
+ -- Henrique de Moraes Holschuh <hmh@debian.org>  Thu, 19 Sep 2019 00:38:50 -0300
+
+intel-microcode (3.20190618.0ubuntu0.19.04.1) disco-security; urgency=medium
 
   * SECURITY UPDATE: New upstream microcode datafile 20190618
     - CVE-2018-12126, CVE-2018-12127, CVE-2018-12130, CVE-2019-11091
@@ -11,7 +72,7 @@ intel-microcode (3.20190618.0ubuntu0.18.04.1) bionic-security; urgency=medium
 
  -- Steve Beattie <sbeattie@ubuntu.com>  Thu, 20 Jun 2019 06:44:56 -0700
 
-intel-microcode (3.20190514.0ubuntu0.18.04.3) bionic-security; urgency=medium
+intel-microcode (3.20190514.0ubuntu0.19.04.3) disco-security; urgency=medium
 
   * Update to final 20190514 microcode update. (LP: #1829745)
     - CVE-2018-12126, CVE-2018-12127, CVE-2018-12130, CVE-2019-11091
@@ -33,7 +94,7 @@ intel-microcode (3.20190514.0ubuntu0.18.04.3) bionic-security; urgency=medium
 
  -- Steve Beattie <sbeattie@ubuntu.com>  Mon, 20 May 2019 22:08:04 -0700
 
-intel-microcode (3.20190514.0ubuntu0.18.04.2) bionic-security; urgency=medium
+intel-microcode (3.20190514.0ubuntu0.19.04.1) disco-security; urgency=medium
 
   * SECURITY UPDATE: new upstream datafile 20190507
     - CVE-2018-12126, CVE-2018-12127, CVE-2018-12130, CVE-2019-11091
@@ -77,7 +138,7 @@ intel-microcode (3.20190514.0ubuntu0.18.04.2) bionic-security; urgency=medium
     + Reinstated Microcodes:
       sig 0x00050653, pf_mask 0x97, 2018-01-29, rev 0x1000140, size 30720
 
- -- Steve Beattie <sbeattie@ubuntu.com>  Mon, 13 May 2019 16:01:03 -0700
+ -- Steve Beattie <sbeattie@ubuntu.com>  Mon, 13 May 2019 15:59:08 -0700
 
 intel-microcode (3.20190312.1) unstable; urgency=medium
 
@@ -175,59 +236,6 @@ intel-microcode (3.20180807a.1) unstable; urgency=high
 
  -- Henrique de Moraes Holschuh <hmh@debian.org>  Fri, 24 Aug 2018 08:53:53 -0300
 
-intel-microcode (3.20180807a.0ubuntu0.18.04.1) bionic-security; urgency=medium
-
-  * SECURITY UPDATE: New upstream microcode update to provide L1D cache
-    flush support to mitigate L1TF (CVE-2018-3646)
-    - New Microcodes:
-      sig 0x000206e6, pf_mask 0x04, 2018-05-15, rev 0x000d, size 9216
-      sig 0x000506c2, pf_mask 0x01, 2018-05-11, rev 0x0014, size 15360
-      sig 0x000506ca, pf_mask 0x03, 2018-05-11, rev 0x000c, size 14336
-      sig 0x000506f1, pf_mask 0x01, 2018-05-11, rev 0x0024, size 10240
-    - Updated Microcodes:
-      sig 0x000106a5, pf_mask 0x03, 2018-05-11, rev 0x001d, size 12288
-      sig 0x000106e5, pf_mask 0x13, 2018-05-08, rev 0x000a, size 9216
-      sig 0x00020652, pf_mask 0x12, 2018-05-08, rev 0x0011, size 9216
-      sig 0x00020655, pf_mask 0x92, 2018-04-23, rev 0x0007, size 4096
-      sig 0x000206a7, pf_mask 0x12, 2018-04-10, rev 0x002e, size 12288
-      sig 0x000206f2, pf_mask 0x05, 2018-05-16, rev 0x003b, size 14336
-      sig 0x000306a9, pf_mask 0x12, 2018-04-10, rev 0x0020, size 13312
-      sig 0x000306c3, pf_mask 0x32, 2018-04-02, rev 0x0025, size 23552
-      sig 0x000306d4, pf_mask 0xc0, 2018-03-22, rev 0x002b, size 18432
-      sig 0x00040651, pf_mask 0x72, 2018-04-02, rev 0x0024, size 22528
-      sig 0x00040661, pf_mask 0x32, 2018-04-02, rev 0x001a, size 25600
-      sig 0x00040671, pf_mask 0x22, 2018-04-03, rev 0x001e, size 13312
-      sig 0x000406e3, pf_mask 0xc0, 2018-04-17, rev 0x00c6, size 99328
-      sig 0x00050662, pf_mask 0x10, 2018-05-25, rev 0x0017, size 31744
-      sig 0x00050663, pf_mask 0x10, 2018-04-20, rev 0x7000013, size 22528
-      sig 0x00050664, pf_mask 0x10, 2018-04-20, rev 0xf000012, size 22528
-      sig 0x000506c9, pf_mask 0x03, 2018-05-11, rev 0x0032, size 16384
-      sig 0x000506e3, pf_mask 0x36, 2018-04-17, rev 0x00c6, size 99328
-      sig 0x000706a1, pf_mask 0x01, 2018-05-22, rev 0x0028, size 73728
-      sig 0x000806e9, pf_mask 0xc0, 2018-03-24, rev 0x008e, size 98304
-      sig 0x000806ea, pf_mask 0xc0, 2018-05-15, rev 0x0096, size 98304
-      sig 0x000906e9, pf_mask 0x2a, 2018-03-24, rev 0x008e, size 98304
-      sig 0x000906ea, pf_mask 0x22, 2018-05-02, rev 0x0096, size 97280
-      sig 0x000906eb, pf_mask 0x02, 2018-03-24, rev 0x008e, size 98304
-    - Added back upstream but blacklisted by packaging due to the issues
-      around addressing Intel SA-00030:
-      sig 0x000206c2, pf_mask 0x03, 2018-05-08, rev 0x001f, size 11264
-  * Remaining changes from Debian:
-    - debian/initramfs.hook: Default to early instead of auto, and
-      install all of the microcode, not just the one matching the
-      current CPU, if MODULES=most is set in the initramfs-tools config
-
- -- Steve Beattie <sbeattie@ubuntu.com>  Fri, 24 Aug 2018 10:38:29 -0700
-
-intel-microcode (3.20180703.2ubuntu1) cosmic; urgency=low
-
-  * Merge from Debian unstable (LP: #1783385).  Remaining changes:
-    - debian/initramfs.hook: Default to early instead of auto, and
-      install all of the microcode, not just the one matching the
-      current CPU, if MODULES=most is set in the initramfs-tools config
-
- -- Steve Beattie <sbeattie@ubuntu.com>  Mon, 23 Jul 2018 20:42:49 -0700
-
 intel-microcode (3.20180703.2) unstable; urgency=medium
 
   * source: fix badly named symlink that resulted in most microcode
@@ -259,14 +267,6 @@ intel-microcode (3.20180703.1) unstable; urgency=medium
 
  -- Henrique de Moraes Holschuh <hmh@debian.org>  Thu, 05 Jul 2018 10:03:53 -0300
 
-intel-microcode (3.20180425.1ubuntu1) cosmic; urgency=medium
-
-  * Default to early instead of auto, and install all of the microcode,
-    not just the one matching the current CPU, if MODULES=most is set
-    in the initramfs-tools config (LP: #1778738)
-
- -- Julian Andres Klode <juliank@ubuntu.com>  Tue, 26 Jun 2018 16:31:30 +0200
-
 intel-microcode (3.20180425.1) unstable; urgency=medium
 
   * New upstream microcode data file 20180425 (closes: #897443, #895878)
@@ -281,112 +281,6 @@ intel-microcode (3.20180425.1) unstable; urgency=medium
     support.
 
  -- Henrique de Moraes Holschuh <hmh@debian.org>  Wed, 02 May 2018 16:48:44 -0300
-
-intel-microcode (3.20180425.1~ubuntu0.18.04.1) bionic-security; urgency=medium
-
-  * SECURITY UPDATE: New upstream microcode data file 20180425 to
-    provide IBRS/IBPB/STIBP microcode support for Spectre variant 2 mitigation
-    for Pentium Silver N/J5xxx, Celeron N/J4xxx (sig 0x000706a1) and
-    Xeon E5/E7 v4; Core i7-69xx/68xx (sig 0x000406f1) (LP: #1769043)
-    - merge from Debian.
-
- -- Steve Beattie <sbeattie@ubuntu.com>  Thu, 03 May 2018 12:45:47 -0700
-
-intel-microcode (3.20180425.1) unstable; urgency=medium
-
-  * New upstream microcode data file 20180425 (closes: #897443, #895878)
-    + Updated Microcodes:
-      sig 0x000406f1, pf_mask 0xef, 2018-03-21, rev 0xb00002c, size 27648
-      sig 0x000706a1, pf_mask 0x01, 2017-12-26, rev 0x0022, size 73728
-    + Implements IBRS/IBPB/STIPB support, Spectre-v2 mitigation
-    + Note that sig 0x000604f1 has been blacklisted from late-loading
-      since Debian release 3.20171117.1.
-  * source: remove undesired list files from microcode directories
-  * source: switch to microcode-<id>.d/ since Intel dropped .dat
-    support.
-
- -- Henrique de Moraes Holschuh <hmh@debian.org>  Wed, 02 May 2018 16:48:44 -0300
-
-intel-microcode (3.20180312.1) unstable; urgency=medium
-
-  * New upstream microcode data file 20180312 (closes: #886367)
-    + New Microcodes:
-      sig 0x00050653, pf_mask 0x97, 2018-01-29, rev 0x1000140, size 30720
-      sig 0x00050665, pf_mask 0x10, 2018-01-22, rev 0xe000009, size 18432
-    + Updated Microcodes:
-      sig 0x000206a7, pf_mask 0x12, 2018-02-07, rev 0x002d, size 12288
-      sig 0x000206d6, pf_mask 0x6d, 2018-01-30, rev 0x061c, size 18432
-      sig 0x000206d7, pf_mask 0x6d, 2018-01-26, rev 0x0713, size 19456
-      sig 0x000306a9, pf_mask 0x12, 2018-02-07, rev 0x001f, size 13312
-      sig 0x000306c3, pf_mask 0x32, 2018-01-21, rev 0x0024, size 23552
-      sig 0x000306d4, pf_mask 0xc0, 2018-01-18, rev 0x002a, size 18432
-      sig 0x000306e4, pf_mask 0xed, 2018-01-25, rev 0x042c, size 15360
-      sig 0x000306e7, pf_mask 0xed, 2018-02-16, rev 0x0713, size 16384
-      sig 0x000306f2, pf_mask 0x6f, 2018-01-19, rev 0x003c, size 33792
-      sig 0x000306f4, pf_mask 0x80, 2018-01-22, rev 0x0011, size 17408
-      sig 0x00040651, pf_mask 0x72, 2018-01-18, rev 0x0023, size 21504
-      sig 0x00040661, pf_mask 0x32, 2018-01-21, rev 0x0019, size 25600
-      sig 0x00040671, pf_mask 0x22, 2018-01-21, rev 0x001d, size 12288
-      sig 0x000406e3, pf_mask 0xc0, 2017-11-16, rev 0x00c2, size 99328
-      sig 0x00050654, pf_mask 0xb7, 2018-01-26, rev 0x2000043, size 28672
-      sig 0x00050662, pf_mask 0x10, 2018-01-22, rev 0x0015, size 31744
-      sig 0x00050663, pf_mask 0x10, 2018-01-22, rev 0x7000012, size 22528
-      sig 0x00050664, pf_mask 0x10, 2018-01-22, rev 0xf000011, size 22528
-      sig 0x000506e3, pf_mask 0x36, 2017-11-16, rev 0x00c2, size 99328
-      sig 0x000806e9, pf_mask 0xc0, 2018-01-21, rev 0x0084, size 98304
-      sig 0x000806ea, pf_mask 0xc0, 2018-01-21, rev 0x0084, size 97280
-      sig 0x000906e9, pf_mask 0x2a, 2018-01-21, rev 0x0084, size 98304
-      sig 0x000906ea, pf_mask 0x22, 2018-01-21, rev 0x0084, size 96256
-      sig 0x000906eb, pf_mask 0x02, 2018-01-21, rev 0x0084, size 98304
-    + Implements IBRS/IBPB/STIPB support, Spectre-v2 mitigation for:
-      Sandybridge, Ivy Bridge, Haswell, Broadwell, Skylake, Kaby Lake,
-      Coffee Lake
-    + Missing production updates:
-      + Broadwell-E/EX Xeons (sig 0x406f1)
-      + Anniedale/Morefield, Apollo Lake, Avoton, Cherry Trail, Braswell,
-        Gemini Lake, Denverton
-  * Update past changelog entries with new information:
-    Intel already had all necessary semanthics in LFENCE, so the
-    Spectre-related Intel microcode changes did not need to enhance LFENCE.
-  * debian/control: update Vcs-* fields for the move to salsa.debian.org
-
- -- Henrique de Moraes Holschuh <hmh@debian.org>  Wed, 14 Mar 2018 09:21:24 -0300
-
-intel-microcode (3.20180312.0~ubuntu18.04.1) bionic; urgency=medium
-
-  * SECURITY UPDATE: New upstream microcode data file 20180312 to provide
-    IBRS/IBPB/STIBP microcode support for Spectre variant 2 mitigation
-    - New Microcodes:
-      sig 0x00050653, pf mask 0x97, 2018-01-29, rev 0x1000140, size 30720
-      sig 0x00050665, pf mask 0x10, 2018-01-22, rev 0xe000009, size 18432
-    - Updated Microcodes:
-      sig 0x000206a7, pf mask 0x12, 2018-02-07, rev 0x002d, size 12288
-      sig 0x000206d6, pf mask 0x6d, 2018-01-30, rev 0x061c, size 18432
-      sig 0x000206d7, pf mask 0x6d, 2018-01-26, rev 0x0713, size 19456
-      sig 0x000306a9, pf mask 0x12, 2018-02-07, rev 0x001f, size 13312
-      sig 0x000306c3, pf mask 0x32, 2018-01-21, rev 0x0024, size 23552
-      sig 0x000306d4, pf mask 0xc0, 2018-01-18, rev 0x002a, size 18432
-      sig 0x000306e4, pf mask 0xed, 2018-01-25, rev 0x042c, size 15360
-      sig 0x000306e7, pf mask 0xed, 2018-02-16, rev 0x0713, size 16384
-      sig 0x000306f2, pf mask 0x6f, 2018-01-19, rev 0x003c, size 33792
-      sig 0x000306f4, pf mask 0x80, 2018-01-22, rev 0x0011, size 17408
-      sig 0x00040651, pf mask 0x72, 2018-01-18, rev 0x0023, size 21504
-      sig 0x00040661, pf mask 0x32, 2018-01-21, rev 0x0019, size 25600
-      sig 0x00040671, pf mask 0x22, 2018-01-21, rev 0x001d, size 12288
-      sig 0x000406e3, pf mask 0xc0, 2017-11-16, rev 0x00c2, size 99328
-      sig 0x00050654, pf mask 0xb7, 2018-01-26, rev 0x2000043, size 28672
-      sig 0x00050662, pf mask 0x10, 2018-01-22, rev 0x0015, size 31744
-      sig 0x00050663, pf mask 0x10, 2018-01-22, rev 0x7000012, size 22528
-      sig 0x00050664, pf mask 0x10, 2018-01-22, rev 0xf000011, size 22528
-      sig 0x000506e3, pf mask 0x36, 2017-11-16, rev 0x00c2, size 99328
-      sig 0x000806e9, pf mask 0xc0, 2018-01-21, rev 0x0084, size 98304
-      sig 0x000806ea, pf mask 0xc0, 2018-01-21, rev 0x0084, size 97280
-      sig 0x000906e9, pf mask 0x2a, 2018-01-21, rev 0x0084, size 98304
-      sig 0x000906ea, pf mask 0x22, 2018-01-21, rev 0x0084, size 96256
-      sig 0x000906eb, pf mask 0x02, 2018-01-21, rev 0x0084, size 98304
-    - CVE-2017-5715 
-
- -- Tyler Hicks <tyhicks@canonical.com>  Tue, 13 Mar 2018 20:10:18 +0000
 
 intel-microcode (3.20180312.1) unstable; urgency=medium
 
