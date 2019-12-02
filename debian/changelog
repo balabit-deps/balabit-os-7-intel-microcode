@@ -1,3 +1,12 @@
+intel-microcode (3.20191115.1ubuntu0.18.04.2) bionic-security; urgency=medium
+
+  * REGRESSION UPDATE: warm reboots cause hangs on certain Skylake
+    processors (LP: 1854764)
+    + Reverted microcode (from revision 0x2000065):
+      sig 0x00050654, pf_mask 0xb7, 2019-07-31, rev 0x2000064, size 33792
+
+ -- Steve Beattie <sbeattie@ubuntu.com>  Mon, 02 Dec 2019 09:23:20 -0800
+
 intel-microcode (3.20191115.1ubuntu0.18.04.1) bionic-security; urgency=medium
 
   * Backport from debian unstable:
