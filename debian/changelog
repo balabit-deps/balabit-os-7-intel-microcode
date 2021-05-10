@@ -1,3 +1,17 @@
+intel-microcode (3.20210216.0ubuntu0.18.04.1) bionic-security; urgency=medium
+
+  * SECURITY UPDATE: New upstream microcode datafile 2021-02-16 (LP: #1927911)
+    + Updated Microcodes:
+      sig 0x00050654, pf_mask 0xb7, 2020-12-31, rev 0x2006a0a, size 36864
+      sig 0x00050656, pf_mask 0xbf, 2020-12-31, rev 0x4003006, size 53248
+      sig 0x00050657, pf_mask 0xbf, 2020-12-31, rev 0x5003006, size 53248
+      sig 0x000706a1, pf_mask 0x01, 2020-06-09, rev 0x0034, size 74752
+    - CVE-2020-8695 RAPL, INTEL-TA-00389
+    - CVE-2020-8696 Vector Register Leakage-Active, INTEL-TA-00381
+    - CVE-2020-8698 Fast forward store predictor, INTEL-TA-00381
+
+ -- Alex Murray <alex.murray@canonical.com>  Mon, 10 May 2021 16:42:49 +0930
+
 intel-microcode (3.20201110.0ubuntu0.18.04.2) bionic-security; urgency=medium
 
   * SECURITY REGRESSION: Some CPUs in the Tiger Lake family sig=0x806c1

@@ -1,5 +1,69 @@
 # Release Notes
 
+## [microcode-20210216](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/releases/tag/microcode-20210216)
+
+### Purpose
+
+- Security updates for [INTEL-SA-00381](https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00381.html)
+
+### New Platforms
+
+None
+
+### Updated Platforms
+
+| Processor      | Stepping | F-M-S/PI    | Old Ver  | New Ver  | Products
+|:---------------|:---------|:------------|:---------|:---------|:---------
+| SKX-SP         | H0/M0/U0 | 06-55-04/b7 | 02006a08 | 02006a0a | Xeon Scalable
+| SKX-D          | M1       | 06-55-04/b7 | 02006a08 | 02006a0a | Xeon D-21xx
+| CLX-SP         | B0       | 06-55-06/bf | 04003003 | 04003006 | Xeon Scalable Gen2
+| CLX-SP         | B1       | 06-55-07/bf | 05003003 | 05003006 | Xeon Scalable Gen2
+
+### Removed Platforms
+
+None
+
+## [microcode-20201118](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/releases/tag/microcode-20201118)
+
+### Purpose
+
+- Removed TGL/06-8c-01/80 due to functional issues with some OEM platforms.
+
+### New Platforms
+
+None
+
+### Updated Platforms
+
+None
+
+### Removed Platforms
+
+| Processor      | Stepping | F-M-S/PI    | Old Ver  | New Ver  | Products
+|:---------------|:---------|:------------|:---------|:---------|:---------
+| TGL            | B1       | 06-8c-01/80 | 00000068 |          | Core Gen11 Mobile
+
+## [microcode-20201112](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/releases/tag/microcode-20201112)
+
+### Purpose
+
+- Security updates for [INTEL-SA-00381](https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00381.html).
+- Security updates for [INTEL-SA-00389](https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00389.html).
+
+### New Platforms
+
+None
+
+### Updated Platforms
+
+| Processor      | Stepping | F-M-S/PI    | Old Ver  | New Ver  | Products
+|:---------------|:---------|:------------|:---------|:---------|:---------
+| GLK            | B0       | 06-7a-01/01 | 00000032 | 00000034 | Pentium Silver N/J5xxx, Celeron N/J4xxx
+
+### Removed Platforms
+
+None
+
 ## [microcode-20201110](https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/releases/tag/microcode-20201110)
 
 ### Purpose
